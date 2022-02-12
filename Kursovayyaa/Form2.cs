@@ -62,5 +62,11 @@ namespace Kursovayyaa
             Form3 form3 = new Form3();
             form3.ShowDialog();
         }
+
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+            Form6 frm = new Form6();
+            frm.ShowDialog();
+        }
     }
 }

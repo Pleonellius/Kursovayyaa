@@ -66,6 +66,7 @@ namespace Kursovayyaa
             this.metroButton2.TabIndex = 1;
             this.metroButton2.Text = "Мои записи";
             this.metroButton2.UseSelectable = true;
+            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
             // 
             // metroButton3
             // 
