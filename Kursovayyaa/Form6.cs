@@ -13,6 +13,48 @@ namespace Kursovayyaa
 {
     public partial class Form6 : MetroFramework.Forms.MetroForm
     {
+        string id_selected_rows = "0";
+        public void GetSelectedIDString()
+        {
+            //Переменная для индекс выбранной строки в гриде
+            string index_selected_rows;
+            //Индекс выбранной строки
+            index_selected_rows = dataGridView1.SelectedCells[0].RowIndex.ToString();
+            //ID конкретной записи в Базе данных, на основании индекса строки
+            id_selected_rows = dataGridView1.Rows[Convert.ToInt32(index_selected_rows)].Cells[0].Value.ToString();
+            //Указываем ID выделенной строки в метке
+        }
+        public void reload_list()
+        {
+            //Чистим виртуальную таблицу
+            table.Clear();
+            //Вызываем метод получения записей, который вновь заполнит таблицу
+            GetListUsers();
+        }
+        public void DeleteUser()
+        {
+            //Формируем строку запроса на добавление строк
+            string sql_delete_user = "DELETE FROM Taloni WHERE id='" + id_selected_rows + "'";
+            //Посылаем запрос на обновление данных
+            MySqlCommand delete_user = new MySqlCommand(sql_delete_user, conn);
+            try
+            {
+                conn.Open();
+                delete_user.ExecuteNonQuery();
+                MessageBox.Show("Удаление прошло успешно", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка удаления строки \n" + ex, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Exit();
+            }
+            finally
+            {
+                conn.Close();
+                //Вызов метода обновления ДатаГрида
+                reload_list();
+            }
+        }
         public Form6()
         {
             InitializeComponent();
@@ -48,6 +90,7 @@ namespace Kursovayyaa
         }
         private void Form6_Load(object sender, EventArgs e)
         {
+            dataGridView1.ContextMenuStrip = metroContextMenu1;
             toolStripTextBox1.Text = Auth.auth_fio;
             // строка подключения к БД
             string connStr = "server=caseum.ru;port=33333;user=st_2_1_19;database=st_2_1_19;password=68201560;";
@@ -94,12 +137,56 @@ namespace Kursovayyaa
                 dataGridView1.CurrentCell = dataGridView1[e.ColumnIndex, e.RowIndex];
 
                 dataGridView1.CurrentRow.Selected = true;
+                GetSelectedIDString();
             }
         }
 
         private void toolStripTextBox1_TextChanged(object sender, EventArgs e)
         {
             bSource.Filter = "[Ф.И.О Пациента] LIKE'" + toolStripTextBox1.Text + "%'";
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+    
+        }
+
+        private void dataGridView1_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (!e.RowIndex.Equals(-1) && !e.ColumnIndex.Equals(-1) && e.Button.Equals(MouseButtons.Right))
+            {
+                dataGridView1.CurrentCell = dataGridView1[e.ColumnIndex, e.RowIndex];
+                //dataGridView1.CurrentRow.Selected = true;
+                dataGridView1.CurrentCell.Selected = true;
+                //Метод получения ID выделенной строки в глобальную переменную
+                GetSelectedIDString();
+            }
+        }
+
+        private void удалитьЗаписьToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void toolStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void toolStripButton1_Click_1(object sender, EventArgs e)
+        {
+            //Метод обновления dataGridView, так как он полностью обновляется, покраски строк не будет. 
+            reload_list();
+        }
+
+        private void удалитьЗаписьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DeleteUser();
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+          
         }
     }
 }

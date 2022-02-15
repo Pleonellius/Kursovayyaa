@@ -13,6 +13,13 @@ namespace Kursovayyaa
 {
     public partial class Form3 : MetroFramework.Forms.MetroForm
     {
+        public void reload_list()
+        {
+            //Чистим виртуальную таблицу
+            table.Clear();
+            //Вызываем метод получения записей, который вновь заполнит таблицу
+            GetListUsers();
+        }
         string id_selected_ima;
         string id_selected_special;
         string id_selected_staj;
@@ -81,7 +88,7 @@ namespace Kursovayyaa
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            metroTextBox1.Text = Auth.auth_fio;
+            label1.Text = Auth.auth_fio;
             // строка подключения к БД
             string connStr = "server=caseum.ru;port=33333;user=st_2_1_19;database=st_2_1_19;password=68201560;";
             // создаём объект для подключения к БД
@@ -183,6 +190,11 @@ namespace Kursovayyaa
                 frm.ShowDialog();
 
             }
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            reload_list();
         }
     }
 }

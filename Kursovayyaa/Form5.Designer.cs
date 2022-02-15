@@ -202,7 +202,7 @@ namespace Kursovayyaa
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(221, 297);
+            this.metroButton1.Location = new System.Drawing.Point(257, 297);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(142, 37);
             this.metroButton1.TabIndex = 6;
@@ -212,7 +212,7 @@ namespace Kursovayyaa
             // 
             // metroButton2
             // 
-            this.metroButton2.Location = new System.Drawing.Point(221, 340);
+            this.metroButton2.Location = new System.Drawing.Point(257, 340);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(142, 37);
             this.metroButton2.TabIndex = 7;

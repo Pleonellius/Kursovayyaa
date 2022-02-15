@@ -45,7 +45,6 @@ namespace Kursovayyaa
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.metroLink1 = new MetroFramework.Controls.MetroLink();
             this.SuspendLayout();
             // 
             // metroButton1
@@ -305,21 +304,11 @@ namespace Kursovayyaa
             this.label6.TabIndex = 19;
             this.label6.Text = "Адрес проживания";
             // 
-            // metroLink1
-            // 
-            this.metroLink1.Location = new System.Drawing.Point(0, 0);
-            this.metroLink1.Name = "metroLink1";
-            this.metroLink1.Size = new System.Drawing.Size(75, 23);
-            this.metroLink1.TabIndex = 20;
-            this.metroLink1.Text = "metroLink1";
-            this.metroLink1.UseSelectable = true;
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(746, 367);
-            this.Controls.Add(this.metroLink1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -360,6 +349,5 @@ namespace Kursovayyaa
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private MetroFramework.Controls.MetroLink metroLink1;
     }
 }
