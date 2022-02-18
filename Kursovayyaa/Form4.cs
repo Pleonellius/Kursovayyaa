@@ -42,5 +42,16 @@ namespace Kursovayyaa
         {
 
         }
+
+        private void metroDateTime1_ValueChanged(object sender, EventArgs e)
+        {
+            //metroDateTime1.MinDate = DateTime.Now;
+            //string a = metroDateTime1.Value.AddDays(7).ToString(string.Format("{0:yyyy-MM-dd}", metroDateTime1.Value));
+            //metroDateTime1.Value.AddDays(7).ToString(string.Format("{0:yyyy-MM-dd}", metroDateTime1.Value));
+            //metroDateTime1.MaxDate = a;
+            metroDateTime1.MinDate = DateTime.Now;
+            metroDateTime1.MaxDate = metroDateTime1.MinDate.AddDays(7);
+            metroDateTime1.Value.ToString(string.Format("{0:yyyy-MM-dd}", metroDateTime1.Value));
+        }
     }
 }
