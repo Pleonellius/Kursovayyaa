@@ -168,7 +168,6 @@ namespace Kursovayyaa
             this.MinimumSize = new System.Drawing.Size(598, 340);
             this.Name = "Form6";
             this.Padding = new System.Windows.Forms.Padding(15, 49, 15, 16);
-            this.Text = "Form6";
             this.Load += new System.EventHandler(this.Form6_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();

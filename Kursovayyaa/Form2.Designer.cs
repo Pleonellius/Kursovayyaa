@@ -45,11 +45,12 @@ namespace Kursovayyaa
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.metroButton4 = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(44, 59);
+            this.metroButton1.Location = new System.Drawing.Point(44, 51);
             this.metroButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(99, 44);
@@ -60,7 +61,7 @@ namespace Kursovayyaa
             // 
             // metroButton2
             // 
-            this.metroButton2.Location = new System.Drawing.Point(44, 142);
+            this.metroButton2.Location = new System.Drawing.Point(44, 106);
             this.metroButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(99, 44);
@@ -71,7 +72,7 @@ namespace Kursovayyaa
             // 
             // metroButton3
             // 
-            this.metroButton3.Location = new System.Drawing.Point(44, 230);
+            this.metroButton3.Location = new System.Drawing.Point(44, 225);
             this.metroButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.metroButton3.Name = "metroButton3";
             this.metroButton3.Size = new System.Drawing.Size(99, 44);
@@ -324,11 +325,21 @@ namespace Kursovayyaa
             this.label6.TabIndex = 19;
             this.label6.Text = "Адрес проживания";
             // 
+            // metroButton4
+            // 
+            this.metroButton4.Location = new System.Drawing.Point(44, 167);
+            this.metroButton4.Margin = new System.Windows.Forms.Padding(2);
+            this.metroButton4.Name = "metroButton4";
+            this.metroButton4.Size = new System.Drawing.Size(99, 44);
+            this.metroButton4.TabIndex = 20;
+            this.metroButton4.UseSelectable = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(560, 298);
+            this.Controls.Add(this.metroButton4);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -349,7 +360,6 @@ namespace Kursovayyaa
             this.MinimumSize = new System.Drawing.Size(560, 298);
             this.Name = "Form2";
             this.Padding = new System.Windows.Forms.Padding(15, 49, 15, 16);
-            this.Text = "Form2";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
@@ -373,5 +383,6 @@ namespace Kursovayyaa
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private MetroFramework.Controls.MetroButton metroButton4;
     }
 }

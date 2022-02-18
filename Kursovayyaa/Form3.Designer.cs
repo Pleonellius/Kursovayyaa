@@ -148,7 +148,6 @@ namespace Kursovayyaa
             this.MinimumSize = new System.Drawing.Size(775, 382);
             this.Name = "Form3";
             this.Padding = new System.Windows.Forms.Padding(15, 49, 15, 16);
-            this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.toolStrip1.ResumeLayout(false);
