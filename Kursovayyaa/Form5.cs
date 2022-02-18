@@ -99,7 +99,7 @@ namespace Kursovayyaa
                         cmd.Parameters.Add("@passw", MySqlDbType.VarChar).Value = sha256(metroTextBox3.Text);
                         cmd.Parameters.Add("@telef", MySqlDbType.VarChar).Value = metroTextBox4.Text;
                         cmd.Parameters.Add("@adres", MySqlDbType.VarChar).Value = metroTextBox5.Text;
-                        cmd.Parameters.Add("@godr", MySqlDbType.Timestamp).Value = metroDateTime1.Value;
+                        cmd.Parameters.Add("@godr", MySqlDbType.Timestamp).Value = string.Format("{0:yyyy-MM-dd}", metroDateTime1.Value);
                         int insertedRows = cmd.ExecuteNonQuery();
                         // закрываем подключение  БД
                         conn.Close();

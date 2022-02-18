@@ -88,6 +88,7 @@ namespace Kursovayyaa
 
         private void Form3_Load(object sender, EventArgs e)
         {
+            toolStripComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             label1.Text = Auth.auth_fio;
             // строка подключения к БД
             string connStr = "server=caseum.ru;port=33333;user=st_2_1_19;database=st_2_1_19;password=68201560;";
