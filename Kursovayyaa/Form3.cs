@@ -24,6 +24,7 @@ namespace Kursovayyaa
         string id_selected_special;
         string id_selected_staj;
         string id_selected_kabinet;
+        string id_selected_vrema;
         public void GetSelectedFIOString()
         {
             //Переменная для индекс выбранной строки в гриде
@@ -31,26 +32,31 @@ namespace Kursovayyaa
             string index_selected_special;
             string index_selected_staj;
             string index_selected_kabinet;
+            string index_selected_vrema;
             //Индекс выбранной строки
             index_selected_ima = dataGridView1.SelectedCells[0].RowIndex.ToString();
             index_selected_special = dataGridView1.SelectedCells[1].RowIndex.ToString();
             index_selected_staj = dataGridView1.SelectedCells[2].RowIndex.ToString();
             index_selected_kabinet = dataGridView1.SelectedCells[4].RowIndex.ToString();
+            index_selected_vrema = dataGridView1.SelectedCells[5].RowIndex.ToString();
             //ID конкретной записи в Базе данных, на основании индекса строки
             id_selected_ima = dataGridView1.Rows[Convert.ToInt32(index_selected_ima)].Cells[0].Value.ToString();
             id_selected_special = dataGridView1.Rows[Convert.ToInt32(index_selected_special)].Cells[1].Value.ToString();
             id_selected_staj = dataGridView1.Rows[Convert.ToInt32(index_selected_staj)].Cells[2].Value.ToString();
             id_selected_kabinet = dataGridView1.Rows[Convert.ToInt32(index_selected_kabinet)].Cells[4].Value.ToString();
+            id_selected_vrema = dataGridView1.Rows[Convert.ToInt32(index_selected_kabinet)].Cells[5].Value.ToString();
             string variable = id_selected_ima;
             string ae = id_selected_special;
             string ue = id_selected_staj;
             string vae = id_selected_kabinet;
+            string astralStep = id_selected_vrema;
             //Класс SomeClass объявлен в файле Program.cs, в нём объявлено простое поле. Наша задача, присвоить этому полю значение, 
             //а в другой форме его вытащить.
             SomeClass.variable_class = variable;
             SomeClass.new_inserted_id = ae;
             SomeClass.new_inserted_mainOrder_id = ue;
             SomeClass.aeee = vae;
+            SomeClass.shadowraze = astralStep;
         }
         public Form3()
         {
@@ -71,7 +77,7 @@ namespace Kursovayyaa
         public void GetListUsers()
         {
             //Запрос для вывода строк в БД
-            string commandStr = "SELECT IMAVraha AS 'Ф.И.О Врача', Special AS 'Специальность', Staj AS 'Стаж', obrazovanie AS 'Образование', kabinet AS 'Кабинет' FROM Vrahi";
+            string commandStr = "SELECT IMAVraha AS 'Ф.И.О Врача', Special AS 'Специальность', Staj AS 'Стаж', obrazovanie AS 'Образование', kabinet AS 'Кабинет',vrema AS 'Время' FROM Vrahi";
             //Открываем соединение
             conn.Open();
             //Объявляем команду, которая выполнить запрос в соединении conn
@@ -102,10 +108,10 @@ namespace Kursovayyaa
             dataGridView1.Columns[2].Visible = true;
             dataGridView1.Columns[3].Visible = true;
             //Ширина полей
-            dataGridView1.Columns[0].FillWeight = 15;
-            dataGridView1.Columns[1].FillWeight = 40;
-            dataGridView1.Columns[2].FillWeight = 15;
-            dataGridView1.Columns[3].FillWeight = 15;
+            dataGridView1.Columns[0].FillWeight = 40;
+            dataGridView1.Columns[1].FillWeight = 20;
+            dataGridView1.Columns[2].FillWeight = 20;
+            dataGridView1.Columns[3].FillWeight = 20;
             //Режим для полей "Только для чтения"
             dataGridView1.Columns[0].ReadOnly = true;
             dataGridView1.Columns[1].ReadOnly = true;
