@@ -127,5 +127,13 @@ namespace Kursovayyaa
                 metroTextBox3.PasswordChar = '*';
             }
         }
+
+        private void metroTextBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //Нельзя вводить буквы, рабочий бакепасе
+            if (Char.IsNumber(e.KeyChar) | (e.KeyChar == Convert.ToChar(",")) | e.KeyChar == '\b') return;
+            else
+                e.Handled = true;
+        }
     }
 }
