@@ -164,7 +164,7 @@ namespace Kursovayyaa
             this.metroTextBox4.Lines = new string[0];
             this.metroTextBox4.Location = new System.Drawing.Point(213, 95);
             this.metroTextBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.metroTextBox4.MaxLength = 32767;
+            this.metroTextBox4.MaxLength = 11;
             this.metroTextBox4.Name = "metroTextBox4";
             this.metroTextBox4.PasswordChar = '\0';
             this.metroTextBox4.ScrollBars = System.Windows.Forms.ScrollBars.None;

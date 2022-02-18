@@ -100,7 +100,7 @@ namespace Kursovayyaa
             this.metroTextBox1.Lines = new string[0];
             this.metroTextBox1.Location = new System.Drawing.Point(362, 76);
             this.metroTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.metroTextBox1.MaxLength = 32767;
+            this.metroTextBox1.MaxLength = 11;
             this.metroTextBox1.Name = "metroTextBox1";
             this.metroTextBox1.PasswordChar = '\0';
             this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
