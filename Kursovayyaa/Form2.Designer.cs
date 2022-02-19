@@ -50,6 +50,8 @@ namespace Kursovayyaa
             this.metroTextBox6 = new MetroFramework.Controls.MetroTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
+            this.metroTextBox2 = new MetroFramework.Controls.MetroTextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // metroButton1
@@ -201,7 +203,7 @@ namespace Kursovayyaa
             this.metroTextBox5.CustomButton.Visible = false;
             this.metroTextBox5.Enabled = false;
             this.metroTextBox5.Lines = new string[0];
-            this.metroTextBox5.Location = new System.Drawing.Point(204, 210);
+            this.metroTextBox5.Location = new System.Drawing.Point(206, 210);
             this.metroTextBox5.Margin = new System.Windows.Forms.Padding(2);
             this.metroTextBox5.MaxLength = 32767;
             this.metroTextBox5.Name = "metroTextBox5";
@@ -225,7 +227,7 @@ namespace Kursovayyaa
             this.metroListView1.Margin = new System.Windows.Forms.Padding(2);
             this.metroListView1.Name = "metroListView1";
             this.metroListView1.OwnerDraw = true;
-            this.metroListView1.Size = new System.Drawing.Size(361, 229);
+            this.metroListView1.Size = new System.Drawing.Size(361, 243);
             this.metroListView1.TabIndex = 13;
             this.metroListView1.UseCompatibleStateImageBehavior = false;
             this.metroListView1.UseSelectable = true;
@@ -309,7 +311,7 @@ namespace Kursovayyaa
             // 
             // metroButton6
             // 
-            this.metroButton6.Location = new System.Drawing.Point(437, 271);
+            this.metroButton6.Location = new System.Drawing.Point(418, 271);
             this.metroButton6.Name = "metroButton6";
             this.metroButton6.Size = new System.Drawing.Size(77, 23);
             this.metroButton6.TabIndex = 22;
@@ -374,7 +376,7 @@ namespace Kursovayyaa
             // 
             // metroDateTime1
             // 
-            this.metroDateTime1.Location = new System.Drawing.Point(206, 114);
+            this.metroDateTime1.Location = new System.Drawing.Point(205, 114);
             this.metroDateTime1.MaxDate = new System.DateTime(2006, 12, 31, 0, 0, 0, 0);
             this.metroDateTime1.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 29);
@@ -384,11 +386,57 @@ namespace Kursovayyaa
             this.metroDateTime1.Value = new System.DateTime(2006, 12, 31, 0, 0, 0, 0);
             this.metroDateTime1.Visible = false;
             // 
+            // metroTextBox2
+            // 
+            // 
+            // 
+            // 
+            this.metroTextBox2.CustomButton.Image = null;
+            this.metroTextBox2.CustomButton.Location = new System.Drawing.Point(274, 1);
+            this.metroTextBox2.CustomButton.Margin = new System.Windows.Forms.Padding(2);
+            this.metroTextBox2.CustomButton.Name = "";
+            this.metroTextBox2.CustomButton.Size = new System.Drawing.Size(17, 17);
+            this.metroTextBox2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroTextBox2.CustomButton.TabIndex = 1;
+            this.metroTextBox2.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTextBox2.CustomButton.UseSelectable = true;
+            this.metroTextBox2.CustomButton.Visible = false;
+            this.metroTextBox2.Enabled = false;
+            this.metroTextBox2.Lines = new string[0];
+            this.metroTextBox2.Location = new System.Drawing.Point(203, 250);
+            this.metroTextBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.metroTextBox2.MaxLength = 32767;
+            this.metroTextBox2.Name = "metroTextBox2";
+            this.metroTextBox2.PasswordChar = '\0';
+            this.metroTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.metroTextBox2.SelectedText = "";
+            this.metroTextBox2.SelectionLength = 0;
+            this.metroTextBox2.SelectionStart = 0;
+            this.metroTextBox2.ShortcutsEnabled = true;
+            this.metroTextBox2.Size = new System.Drawing.Size(292, 19);
+            this.metroTextBox2.TabIndex = 27;
+            this.metroTextBox2.UseSelectable = true;
+            this.metroTextBox2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.metroTextBox2.WaterMarkFont = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(202, 231);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(36, 19);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "Пол";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(560, 298);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.metroTextBox2);
             this.Controls.Add(this.metroDateTime1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.metroTextBox6);
@@ -442,5 +490,7 @@ namespace Kursovayyaa
         private MetroFramework.Controls.MetroTextBox metroTextBox6;
         private System.Windows.Forms.Label label7;
         private MetroFramework.Controls.MetroDateTime metroDateTime1;
+        private MetroFramework.Controls.MetroTextBox metroTextBox2;
+        private System.Windows.Forms.Label label3;
     }
 }

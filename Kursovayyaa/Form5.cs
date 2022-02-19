@@ -75,6 +75,7 @@ namespace Kursovayyaa
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
+            
             using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 if (CheckUser())
@@ -83,11 +84,11 @@ namespace Kursovayyaa
                 }
                 //Открываем соединение
                 conn.Open();
-                using (MySqlCommand cmd = new MySqlCommand($"INSERT INTO Pacienti (NamePac, Age, GodRoj, Telefon, Adres, Password)" +
-                   "VALUES (@name, @age, @godr, @telef, @adres, @passw)", conn))
+                using (MySqlCommand cmd = new MySqlCommand($"INSERT INTO Pacienti (NamePac, GodRoj, Telefon, Adres, pol, Password)" +
+                   "VALUES (@name, @godr, @telef, @adres, @po, @passw)", conn))
                 {
                     //Условная конструкция
-                    if (metroTextBox1.Text == "" || metroTextBox2.Text== "" || metroTextBox3.Text == "" || metroTextBox4.Text== "" || metroTextBox5.Text== "")
+                    if (metroTextBox1.Text == "" || metroTextBox3.Text == "" || metroTextBox4.Text== "" || metroTextBox5.Text== "")
                     {
                         MessageBox.Show("Заполните все поля !");
                     }
@@ -95,10 +96,10 @@ namespace Kursovayyaa
                     {
                         //Использование параметров в запросах. Это повышает безопасность работы программы
                         cmd.Parameters.Add("@name", MySqlDbType.VarChar).Value = metroTextBox1.Text;
-                        cmd.Parameters.Add("@age", MySqlDbType.VarChar).Value = metroTextBox2.Text;
                         cmd.Parameters.Add("@passw", MySqlDbType.VarChar).Value = sha256(metroTextBox3.Text);
                         cmd.Parameters.Add("@telef", MySqlDbType.VarChar).Value = metroTextBox4.Text;
                         cmd.Parameters.Add("@adres", MySqlDbType.VarChar).Value = metroTextBox5.Text;
+                        cmd.Parameters.Add("@po", MySqlDbType.VarChar).Value = metroComboBox1.SelectedItem.ToString();
                         cmd.Parameters.Add("@godr", MySqlDbType.Timestamp).Value = string.Format("{0:yyyy-MM-dd}", metroDateTime1.Value);
                         int insertedRows = cmd.ExecuteNonQuery();
                         // закрываем подключение  БД

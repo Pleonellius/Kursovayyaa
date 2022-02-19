@@ -35,6 +35,7 @@ namespace Kursovayyaa
                 metroTextBox4.Text = Auth.auth_telef;
                 metroTextBox5.Text = Auth.auth_adres;
                 metroTextBox6.Text = Auth.auth_id;
+                metroTextBox2.Text = Auth.auth_pol;
             }
             //иначе
             else

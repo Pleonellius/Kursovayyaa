@@ -30,7 +30,6 @@ namespace Kursovayyaa
         private void InitializeComponent()
         {
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox2 = new MetroFramework.Controls.MetroTextBox();
             this.metroTextBox3 = new MetroFramework.Controls.MetroTextBox();
             this.metroTextBox4 = new MetroFramework.Controls.MetroTextBox();
             this.metroTextBox5 = new MetroFramework.Controls.MetroTextBox();
@@ -40,13 +39,14 @@ namespace Kursovayyaa
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
             this.htmlToolTip1 = new MetroFramework.Drawing.Html.HtmlToolTip();
             this.Регистрация = new MetroFramework.Controls.MetroLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroCheckBox1 = new MetroFramework.Controls.MetroCheckBox();
+            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
+            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,40 +83,6 @@ namespace Kursovayyaa
             this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.metroTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.metroTextBox1_KeyPress);
             // 
-            // metroTextBox2
-            // 
-            // 
-            // 
-            // 
-            this.metroTextBox2.CustomButton.Image = null;
-            this.metroTextBox2.CustomButton.Location = new System.Drawing.Point(66, 1);
-            this.metroTextBox2.CustomButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.metroTextBox2.CustomButton.Name = "";
-            this.metroTextBox2.CustomButton.Size = new System.Drawing.Size(13, 14);
-            this.metroTextBox2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox2.CustomButton.TabIndex = 1;
-            this.metroTextBox2.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox2.CustomButton.UseSelectable = true;
-            this.metroTextBox2.CustomButton.Visible = false;
-            this.metroTextBox2.Lines = new string[0];
-            this.metroTextBox2.Location = new System.Drawing.Point(64, 156);
-            this.metroTextBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.metroTextBox2.MaxLength = 32767;
-            this.metroTextBox2.Name = "metroTextBox2";
-            this.metroTextBox2.PasswordChar = '\0';
-            this.metroTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox2.SelectedText = "";
-            this.metroTextBox2.SelectionLength = 0;
-            this.metroTextBox2.SelectionStart = 0;
-            this.metroTextBox2.ShortcutsEnabled = true;
-            this.metroTextBox2.Size = new System.Drawing.Size(106, 19);
-            this.metroTextBox2.TabIndex = 1;
-            this.metroTextBox2.UseSelectable = true;
-            this.metroTextBox2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox2.WaterMarkFont = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.metroTextBox2.Click += new System.EventHandler(this.metroTextBox2_Click);
-            this.metroTextBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.metroTextBox2_KeyPress_1);
-            // 
             // metroTextBox3
             // 
             // 
@@ -133,7 +99,7 @@ namespace Kursovayyaa
             this.metroTextBox3.CustomButton.UseSelectable = true;
             this.metroTextBox3.CustomButton.Visible = false;
             this.metroTextBox3.Lines = new string[0];
-            this.metroTextBox3.Location = new System.Drawing.Point(66, 218);
+            this.metroTextBox3.Location = new System.Drawing.Point(64, 156);
             this.metroTextBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.metroTextBox3.MaxLength = 32767;
             this.metroTextBox3.Name = "metroTextBox3";
@@ -250,7 +216,7 @@ namespace Kursovayyaa
             // 
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel2.Location = new System.Drawing.Point(66, 188);
+            this.metroLabel2.Location = new System.Drawing.Point(64, 129);
             this.metroLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(56, 19);
@@ -278,17 +244,6 @@ namespace Kursovayyaa
             this.metroLabel4.Size = new System.Drawing.Size(116, 19);
             this.metroLabel4.TabIndex = 11;
             this.metroLabel4.Text = "Номер телефона";
-            // 
-            // metroLabel5
-            // 
-            this.metroLabel5.AutoSize = true;
-            this.metroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel5.Location = new System.Drawing.Point(64, 129);
-            this.metroLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(58, 19);
-            this.metroLabel5.TabIndex = 12;
-            this.metroLabel5.Text = "Возраст";
             // 
             // metroLabel6
             // 
@@ -347,7 +302,7 @@ namespace Kursovayyaa
             // metroCheckBox1
             // 
             this.metroCheckBox1.AutoSize = true;
-            this.metroCheckBox1.Location = new System.Drawing.Point(66, 241);
+            this.metroCheckBox1.Location = new System.Drawing.Point(64, 179);
             this.metroCheckBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.metroCheckBox1.Name = "metroCheckBox1";
             this.metroCheckBox1.Size = new System.Drawing.Size(116, 15);
@@ -356,16 +311,41 @@ namespace Kursovayyaa
             this.metroCheckBox1.UseSelectable = true;
             this.metroCheckBox1.CheckedChanged += new System.EventHandler(this.metroCheckBox1_CheckedChanged);
             // 
+            // metroComboBox1
+            // 
+            this.metroComboBox1.FormattingEnabled = true;
+            this.metroComboBox1.ItemHeight = 23;
+            this.metroComboBox1.Items.AddRange(new object[] {
+            "Мужской",
+            "Женский"});
+            this.metroComboBox1.Location = new System.Drawing.Point(64, 218);
+            this.metroComboBox1.Name = "metroComboBox1";
+            this.metroComboBox1.Size = new System.Drawing.Size(121, 29);
+            this.metroComboBox1.TabIndex = 19;
+            this.metroComboBox1.UseSelectable = true;
+            // 
+            // metroLabel5
+            // 
+            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel5.Location = new System.Drawing.Point(64, 196);
+            this.metroLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(34, 19);
+            this.metroLabel5.TabIndex = 20;
+            this.metroLabel5.Text = "Пол";
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(412, 306);
+            this.Controls.Add(this.metroLabel5);
+            this.Controls.Add(this.metroComboBox1);
             this.Controls.Add(this.metroCheckBox1);
             this.Controls.Add(this.Регистрация);
             this.Controls.Add(this.metroDateTime1);
             this.Controls.Add(this.metroLabel6);
-            this.Controls.Add(this.metroLabel5);
             this.Controls.Add(this.metroLabel4);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.metroLabel2);
@@ -375,7 +355,6 @@ namespace Kursovayyaa
             this.Controls.Add(this.metroTextBox5);
             this.Controls.Add(this.metroTextBox4);
             this.Controls.Add(this.metroTextBox3);
-            this.Controls.Add(this.metroTextBox2);
             this.Controls.Add(this.metroTextBox1);
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -393,7 +372,6 @@ namespace Kursovayyaa
         #endregion
 
         private MetroFramework.Controls.MetroTextBox metroTextBox1;
-        private MetroFramework.Controls.MetroTextBox metroTextBox2;
         private MetroFramework.Controls.MetroTextBox metroTextBox3;
         private MetroFramework.Controls.MetroTextBox metroTextBox4;
         private MetroFramework.Controls.MetroTextBox metroTextBox5;
@@ -403,12 +381,13 @@ namespace Kursovayyaa
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroLabel metroLabel4;
-        private MetroFramework.Controls.MetroLabel metroLabel5;
         private MetroFramework.Controls.MetroLabel metroLabel6;
         private MetroFramework.Controls.MetroDateTime metroDateTime1;
         private MetroFramework.Drawing.Html.HtmlToolTip htmlToolTip1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private MetroFramework.Controls.MetroLabel Регистрация;
         private MetroFramework.Controls.MetroCheckBox metroCheckBox1;
+        private MetroFramework.Controls.MetroComboBox metroComboBox1;
+        private MetroFramework.Controls.MetroLabel metroLabel5;
     }
 }
