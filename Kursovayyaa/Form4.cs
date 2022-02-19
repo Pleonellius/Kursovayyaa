@@ -30,6 +30,7 @@ namespace Kursovayyaa
             metroTextBox6.Text = Auth.auth_adres;
             metroTextBox7.Text = Auth.auth_data;
             metroTextBox8.Text = SomeClass.shadowraze;
+            metroTextBox9.Text = Auth.auth_pol;
         }
 
         private void label7_Click(object sender, EventArgs e)

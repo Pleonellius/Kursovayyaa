@@ -54,6 +54,8 @@ namespace Kursovayyaa
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.metroTextBox9 = new MetroFramework.Controls.MetroTextBox();
             this.SuspendLayout();
             // 
             // metroButton1
@@ -94,10 +96,10 @@ namespace Kursovayyaa
             this.listBox2.FormattingEnabled = true;
             this.listBox2.Items.AddRange(new object[] {
             " "});
-            this.listBox2.Location = new System.Drawing.Point(368, 34);
+            this.listBox2.Location = new System.Drawing.Point(368, 35);
             this.listBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(272, 147);
+            this.listBox2.Size = new System.Drawing.Size(272, 186);
             this.listBox2.TabIndex = 3;
             // 
             // label1
@@ -137,6 +139,7 @@ namespace Kursovayyaa
             this.metroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTextBox1.CustomButton.UseSelectable = true;
             this.metroTextBox1.CustomButton.Visible = false;
+            this.metroTextBox1.Enabled = false;
             this.metroTextBox1.Lines = new string[] {
         "metroTextBox1"};
             this.metroTextBox1.Location = new System.Drawing.Point(16, 74);
@@ -171,6 +174,7 @@ namespace Kursovayyaa
             this.metroTextBox2.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTextBox2.CustomButton.UseSelectable = true;
             this.metroTextBox2.CustomButton.Visible = false;
+            this.metroTextBox2.Enabled = false;
             this.metroTextBox2.Lines = new string[] {
         "metroTextBox2"};
             this.metroTextBox2.Location = new System.Drawing.Point(16, 114);
@@ -205,6 +209,7 @@ namespace Kursovayyaa
             this.metroTextBox3.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTextBox3.CustomButton.UseSelectable = true;
             this.metroTextBox3.CustomButton.Visible = false;
+            this.metroTextBox3.Enabled = false;
             this.metroTextBox3.Lines = new string[] {
         "metroTextBox3"};
             this.metroTextBox3.Location = new System.Drawing.Point(17, 155);
@@ -239,6 +244,7 @@ namespace Kursovayyaa
             this.metroTextBox4.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTextBox4.CustomButton.UseSelectable = true;
             this.metroTextBox4.CustomButton.Visible = false;
+            this.metroTextBox4.Enabled = false;
             this.metroTextBox4.Lines = new string[] {
         "metroTextBox4"};
             this.metroTextBox4.Location = new System.Drawing.Point(17, 196);
@@ -317,6 +323,7 @@ namespace Kursovayyaa
             this.metroTextBox5.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTextBox5.CustomButton.UseSelectable = true;
             this.metroTextBox5.CustomButton.Visible = false;
+            this.metroTextBox5.Enabled = false;
             this.metroTextBox5.Lines = new string[] {
         "metroTextBox5"};
             this.metroTextBox5.Location = new System.Drawing.Point(382, 75);
@@ -351,6 +358,7 @@ namespace Kursovayyaa
             this.metroTextBox6.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTextBox6.CustomButton.UseSelectable = true;
             this.metroTextBox6.CustomButton.Visible = false;
+            this.metroTextBox6.Enabled = false;
             this.metroTextBox6.Lines = new string[] {
         "metroTextBox6"};
             this.metroTextBox6.Location = new System.Drawing.Point(382, 114);
@@ -385,6 +393,7 @@ namespace Kursovayyaa
             this.metroTextBox7.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTextBox7.CustomButton.UseSelectable = true;
             this.metroTextBox7.CustomButton.Visible = false;
+            this.metroTextBox7.Enabled = false;
             this.metroTextBox7.Lines = new string[] {
         "metroTextBox7"};
             this.metroTextBox7.Location = new System.Drawing.Point(382, 155);
@@ -420,7 +429,7 @@ namespace Kursovayyaa
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(382, 95);
+            this.label8.Location = new System.Drawing.Point(379, 96);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(48, 17);
@@ -440,12 +449,12 @@ namespace Kursovayyaa
             // 
             // metroDateTime1
             // 
-            this.metroDateTime1.Location = new System.Drawing.Point(418, 216);
+            this.metroDateTime1.Location = new System.Drawing.Point(461, 248);
             this.metroDateTime1.MaxDate = new System.DateTime(2022, 3, 10, 0, 0, 0, 0);
             this.metroDateTime1.MinDate = new System.DateTime(2022, 2, 18, 0, 0, 0, 0);
             this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 29);
             this.metroDateTime1.Name = "metroDateTime1";
-            this.metroDateTime1.Size = new System.Drawing.Size(163, 30);
+            this.metroDateTime1.Size = new System.Drawing.Size(163, 29);
             this.metroDateTime1.TabIndex = 20;
             this.metroDateTime1.Value = new System.DateTime(2022, 2, 18, 0, 0, 0, 0);
             this.metroDateTime1.ValueChanged += new System.EventHandler(this.metroDateTime1_ValueChanged);
@@ -465,6 +474,7 @@ namespace Kursovayyaa
             this.metroTextBox8.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTextBox8.CustomButton.UseSelectable = true;
             this.metroTextBox8.CustomButton.Visible = false;
+            this.metroTextBox8.Enabled = false;
             this.metroTextBox8.Lines = new string[] {
         "metroTextBox8"};
             this.metroTextBox8.Location = new System.Drawing.Point(16, 235);
@@ -499,7 +509,7 @@ namespace Kursovayyaa
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.Location = new System.Drawing.Point(434, 187);
+            this.label11.Location = new System.Drawing.Point(471, 223);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(139, 22);
@@ -517,11 +527,59 @@ namespace Kursovayyaa
             this.label12.TabIndex = 24;
             this.label12.Text = "Запись";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label13.Location = new System.Drawing.Point(382, 176);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(33, 17);
+            this.label13.TabIndex = 25;
+            this.label13.Text = "Пол";
+            // 
+            // metroTextBox9
+            // 
+            // 
+            // 
+            // 
+            this.metroTextBox9.CustomButton.Image = null;
+            this.metroTextBox9.CustomButton.Location = new System.Drawing.Point(224, 1);
+            this.metroTextBox9.CustomButton.Margin = new System.Windows.Forms.Padding(2);
+            this.metroTextBox9.CustomButton.Name = "";
+            this.metroTextBox9.CustomButton.Size = new System.Drawing.Size(17, 17);
+            this.metroTextBox9.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroTextBox9.CustomButton.TabIndex = 1;
+            this.metroTextBox9.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTextBox9.CustomButton.UseSelectable = true;
+            this.metroTextBox9.CustomButton.Visible = false;
+            this.metroTextBox9.Enabled = false;
+            this.metroTextBox9.Lines = new string[] {
+        "metroTextBox9"};
+            this.metroTextBox9.Location = new System.Drawing.Point(382, 195);
+            this.metroTextBox9.Margin = new System.Windows.Forms.Padding(2);
+            this.metroTextBox9.MaxLength = 32767;
+            this.metroTextBox9.Name = "metroTextBox9";
+            this.metroTextBox9.PasswordChar = '\0';
+            this.metroTextBox9.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.metroTextBox9.SelectedText = "";
+            this.metroTextBox9.SelectionLength = 0;
+            this.metroTextBox9.SelectionStart = 0;
+            this.metroTextBox9.ShortcutsEnabled = true;
+            this.metroTextBox9.Size = new System.Drawing.Size(242, 19);
+            this.metroTextBox9.TabIndex = 26;
+            this.metroTextBox9.Text = "metroTextBox9";
+            this.metroTextBox9.UseSelectable = true;
+            this.metroTextBox9.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.metroTextBox9.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(642, 334);
+            this.Controls.Add(this.metroTextBox9);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -585,5 +643,7 @@ namespace Kursovayyaa
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private MetroFramework.Controls.MetroTextBox metroTextBox9;
     }
 }
