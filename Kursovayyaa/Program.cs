@@ -34,6 +34,7 @@ namespace Kursovayyaa
         public static string auth_telef = null;
         //Статичное поле, которое хранит значения Адреса пользователя
         public static string auth_adres = null;
+        public static string auth_id = null;
     }
     static class Program
     {

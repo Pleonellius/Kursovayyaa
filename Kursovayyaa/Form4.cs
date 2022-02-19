@@ -27,7 +27,7 @@ namespace Kursovayyaa
             metroTextBox3.Text = SomeClass.new_inserted_mainOrder_id;
             metroTextBox4.Text = SomeClass.aeee;
             metroTextBox5.Text = Auth.auth_fio;
-            metroTextBox6.Text = Auth.auth_age;
+            metroTextBox6.Text = Auth.auth_adres;
             metroTextBox7.Text = Auth.auth_data;
             metroTextBox8.Text = SomeClass.shadowraze;
         }

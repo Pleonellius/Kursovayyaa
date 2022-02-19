@@ -54,6 +54,7 @@ namespace Kursovayyaa
                 Auth.auth_data = reader[3].ToString();
                 Auth.auth_telef = reader[4].ToString();
                 Auth.auth_adres = reader[5].ToString();
+                Auth.auth_id = reader[0].ToString();
             }
             reader.Close(); // закрываем reader
             // закрываем соединение с БД
