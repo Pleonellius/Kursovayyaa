@@ -130,8 +130,24 @@ namespace Kursovayyaa
 
         private void metroTextBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
+        }
+
+        private void metroTextBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroTextBox2_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
             //Нельзя вводить буквы, рабочий бакепасе
             if (Char.IsNumber(e.KeyChar) | (e.KeyChar == Convert.ToChar(",")) | e.KeyChar == '\b') return;
+            else
+                e.Handled = true;
+        }
+
+        private void metroTextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar)) return;
             else
                 e.Handled = true;
         }

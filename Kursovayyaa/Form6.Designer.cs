@@ -51,8 +51,8 @@ namespace Kursovayyaa
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(46, 289);
-            this.metroButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.metroButton1.Location = new System.Drawing.Point(142, 299);
+            this.metroButton1.Margin = new System.Windows.Forms.Padding(2);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(77, 32);
             this.metroButton1.TabIndex = 1;
@@ -74,11 +74,12 @@ namespace Kursovayyaa
             this.toolStripSeparator1,
             this.toolStripButton1,
             this.toolStripSeparator2});
-            this.toolStrip1.Location = new System.Drawing.Point(15, 49);
+            this.toolStrip1.Location = new System.Drawing.Point(15, 60);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(568, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(737, 27);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
             // toolStripTextBox1
             // 
@@ -145,12 +146,12 @@ namespace Kursovayyaa
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 73);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(15, 89);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(570, 211);
+            this.dataGridView1.Size = new System.Drawing.Size(737, 206);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
             this.dataGridView1.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseDown);
@@ -159,15 +160,15 @@ namespace Kursovayyaa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(598, 340);
+            this.ClientSize = new System.Drawing.Size(767, 340);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.MaximumSize = new System.Drawing.Size(598, 340);
-            this.MinimumSize = new System.Drawing.Size(598, 340);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximumSize = new System.Drawing.Size(767, 340);
+            this.MinimumSize = new System.Drawing.Size(767, 340);
             this.Name = "Form6";
-            this.Padding = new System.Windows.Forms.Padding(15, 49, 15, 16);
+            this.Padding = new System.Windows.Forms.Padding(15, 60, 15, 16);
             this.Load += new System.EventHandler(this.Form6_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();

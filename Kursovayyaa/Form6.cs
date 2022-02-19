@@ -74,7 +74,7 @@ namespace Kursovayyaa
         public void GetListUsers()
         {
             //Запрос для вывода строк в БД
-            string commandStr = "SELECT id AS 'Номер' , NamePaci AS 'Ф.И.О Пациента', idVraha AS 'Ф.И.О Врача', Data AS 'Дата', Time AS 'Время', Kab AS 'Кабинет' FROM Taloni";
+            string commandStr = "SELECT id AS 'Номер' , NamePaci AS 'Ф.И.О Пациента', idVraha AS 'Ф.И.О Врача', Data AS 'Дата', Time AS 'Время', Kab AS 'Кабинет',telf AS 'Номер телефона' FROM Taloni";
             //Открываем соединение
             conn.Open();
             //Объявляем команду, которая выполнить запрос в соединении conn
@@ -91,7 +91,7 @@ namespace Kursovayyaa
         private void Form6_Load(object sender, EventArgs e)
         {
             dataGridView1.ContextMenuStrip = metroContextMenu1;
-            toolStripTextBox1.Text = Auth.auth_fio;
+            toolStripTextBox1.Text = Auth.auth_telef;
             // строка подключения к БД
             string connStr = "server=caseum.ru;port=33333;user=st_2_1_19;database=st_2_1_19;password=68201560;";
             // создаём объект для подключения к БД
@@ -104,10 +104,10 @@ namespace Kursovayyaa
             dataGridView1.Columns[2].Visible = true;
             dataGridView1.Columns[3].Visible = true;
             //Ширина полей
-            dataGridView1.Columns[0].FillWeight = 15;
+            dataGridView1.Columns[0].FillWeight = 10;
             dataGridView1.Columns[1].FillWeight = 40;
-            dataGridView1.Columns[2].FillWeight = 15;
-            dataGridView1.Columns[3].FillWeight = 15;
+            dataGridView1.Columns[2].FillWeight = 40;
+            dataGridView1.Columns[3].FillWeight = 30;
             //Режим для полей "Только для чтения"
             dataGridView1.Columns[0].ReadOnly = true;
             dataGridView1.Columns[1].ReadOnly = true;
@@ -143,7 +143,7 @@ namespace Kursovayyaa
 
         private void toolStripTextBox1_TextChanged(object sender, EventArgs e)
         {
-            bSource.Filter = "[Ф.И.О Пациента] LIKE'" + toolStripTextBox1.Text + "%'";
+            bSource.Filter = "[Номер телефона] LIKE'" + toolStripTextBox1.Text + "%'";
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
@@ -187,6 +187,11 @@ namespace Kursovayyaa
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
           
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }
