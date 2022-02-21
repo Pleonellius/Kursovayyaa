@@ -28,7 +28,7 @@ namespace Kursovayyaa
             //Объявляем команду
             MySqlCommand command = new MySqlCommand(sql, conn);
             command.Parameters.Add("@un", MySqlDbType.VarChar, 25);
-            command.Parameters["@un"].Value = metroTextBox4.Text;
+            command.Parameters["@un"].Value = textBox1.Text;
             //Заносим команду в адаптер
             adapter.SelectCommand = command;
             //Заполняем таблицу
@@ -87,26 +87,34 @@ namespace Kursovayyaa
                 using (MySqlCommand cmd = new MySqlCommand($"INSERT INTO Pacienti (NamePac, GodRoj, Telefon, Adres, pol, Password)" +
                    "VALUES (@name, @godr, @telef, @adres, @po, @passw)", conn))
                 {
-                    //Условная конструкция
-                    if (metroTextBox1.Text == "" || metroTextBox3.Text == "" || metroTextBox4.Text== "" || metroTextBox5.Text== "")
+                    if (textBox1.TextLength < 11)
                     {
-                        MessageBox.Show("Заполните все поля !");
+                        MessageBox.Show("Минимум 11 цифр в номере телефона");
                     }
                     else
                     {
-                        //Использование параметров в запросах. Это повышает безопасность работы программы
-                        cmd.Parameters.Add("@name", MySqlDbType.VarChar).Value = metroTextBox1.Text;
-                        cmd.Parameters.Add("@passw", MySqlDbType.VarChar).Value = sha256(metroTextBox3.Text);
-                        cmd.Parameters.Add("@telef", MySqlDbType.VarChar).Value = metroTextBox4.Text;
-                        cmd.Parameters.Add("@adres", MySqlDbType.VarChar).Value = metroTextBox5.Text;
-                        cmd.Parameters.Add("@po", MySqlDbType.VarChar).Value = metroComboBox1.SelectedItem.ToString();
-                        cmd.Parameters.Add("@godr", MySqlDbType.Timestamp).Value = string.Format("{0:yyyy-MM-dd}", metroDateTime1.Value);
-                        int insertedRows = cmd.ExecuteNonQuery();
-                        // закрываем подключение  БД
-                        conn.Close();
-                        MessageBox.Show("Регистрация прошла успешно !");
-                        this.Close();
+                        //Условная конструкция
+                        if (metroTextBox1.Text == "" || metroTextBox3.Text == "" || textBox1.Text == "" || metroTextBox5.Text == "")
+                        {
+                            MessageBox.Show("Заполните все поля !");
+                        }
+                        else
+                        {
+                            //Использование параметров в запросах. Это повышает безопасность работы программы
+                            cmd.Parameters.Add("@name", MySqlDbType.VarChar).Value = metroTextBox1.Text;
+                            cmd.Parameters.Add("@passw", MySqlDbType.VarChar).Value = sha256(metroTextBox3.Text);
+                            cmd.Parameters.Add("@telef", MySqlDbType.VarChar).Value = textBox1.Text;
+                            cmd.Parameters.Add("@adres", MySqlDbType.VarChar).Value = metroTextBox5.Text;
+                            cmd.Parameters.Add("@po", MySqlDbType.VarChar).Value = metroComboBox1.SelectedItem.ToString();
+                            cmd.Parameters.Add("@godr", MySqlDbType.Timestamp).Value = string.Format("{0:yyyy-MM-dd}", metroDateTime1.Value);
+                            int insertedRows = cmd.ExecuteNonQuery();
+                            // закрываем подключение  БД
+                            conn.Close();
+                            MessageBox.Show("Регистрация прошла успешно !");
+                            this.Close();
+                        }
                     }
+                   
                 }
             }
 
@@ -151,6 +159,14 @@ namespace Kursovayyaa
             if (!Char.IsDigit(e.KeyChar)) return;
             else
                 e.Handled = true;
+        }
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+          
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }
