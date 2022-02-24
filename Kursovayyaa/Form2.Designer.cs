@@ -230,7 +230,6 @@ namespace Kursovayyaa
             this.metroListView1.TabIndex = 13;
             this.metroListView1.UseCompatibleStateImageBehavior = false;
             this.metroListView1.UseSelectable = true;
-            this.metroListView1.SelectedIndexChanged += new System.EventHandler(this.metroListView1_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -271,7 +270,6 @@ namespace Kursovayyaa
             this.label5.Size = new System.Drawing.Size(151, 22);
             this.label5.TabIndex = 18;
             this.label5.Text = "Номер телефона";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 

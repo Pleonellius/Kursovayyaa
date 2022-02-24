@@ -146,11 +146,6 @@ namespace Kursovayyaa
             bSource.Filter = "[Номер телефона] LIKE'" + toolStripTextBox1.Text + "%'";
         }
 
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-    
-        }
-
         private void dataGridView1_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
         {
             if (!e.RowIndex.Equals(-1) && !e.ColumnIndex.Equals(-1) && e.Button.Equals(MouseButtons.Right))
@@ -163,16 +158,6 @@ namespace Kursovayyaa
             }
         }
 
-        private void удалитьЗаписьToolStripMenuItem_Click_1(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void toolStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
         private void toolStripButton1_Click_1(object sender, EventArgs e)
         {
             //Метод обновления dataGridView, так как он полностью обновляется, покраски строк не будет. 
@@ -182,16 +167,6 @@ namespace Kursovayyaa
         private void удалитьЗаписьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DeleteUser();
-        }
-
-        private void toolStripButton2_Click(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
         }
     }
 }

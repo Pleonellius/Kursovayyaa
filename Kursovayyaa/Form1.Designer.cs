@@ -98,7 +98,6 @@ namespace Kursovayyaa
             this.metroTextBox1.UseSelectable = true;
             this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.metroTextBox1.Click += new System.EventHandler(this.metroTextBox1_Click);
             this.metroTextBox1.Enter += new System.EventHandler(this.metroTextBox1_Enter);
             this.metroTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.metroTextBox1_KeyPress);
             this.metroTextBox1.Leave += new System.EventHandler(this.metroTextBox1_Leave);
@@ -132,7 +131,6 @@ namespace Kursovayyaa
             this.metroTextBox2.UseSelectable = true;
             this.metroTextBox2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox2.WaterMarkFont = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.metroTextBox2.Click += new System.EventHandler(this.metroTextBox2_Click);
             this.metroTextBox2.Enter += new System.EventHandler(this.metroTextBox2_Enter);
             this.metroTextBox2.Leave += new System.EventHandler(this.metroTextBox2_Leave);
             // 

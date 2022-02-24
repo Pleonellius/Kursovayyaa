@@ -32,12 +32,6 @@ namespace Kursovayyaa
             metroTextBox8.Text = SomeClass.shadowraze;
             metroTextBox9.Text = Auth.auth_pol;
         }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void metroButton1_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -69,7 +63,6 @@ namespace Kursovayyaa
                 }
             }
         }
-
         private void metroDateTime1_ValueChanged(object sender, EventArgs e)
         {
             metroDateTime1.MinDate = DateTime.Now;

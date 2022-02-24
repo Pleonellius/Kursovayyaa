@@ -144,22 +144,6 @@ namespace Kursovayyaa
                 GetSelectedFIOString();
             }
         }
-
-        private void toolStripTextBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolStripTextBox1_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void toolStripComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (toolStripComboBox1.SelectedIndex)
@@ -182,12 +166,6 @@ namespace Kursovayyaa
                     break;
             }
         }
-
-        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
         private void metroButton2_Click(object sender, EventArgs e)
         {
             if (dataGridView1.CurrentRow.Selected == true)

@@ -142,16 +142,6 @@ namespace Kursovayyaa
                 metroTextBox3.PasswordChar = '*';
             }
         }
-
-        private void metroTextBox2_KeyPress(object sender, KeyPressEventArgs e)
-        {
-        }
-
-        private void metroTextBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void metroTextBox2_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             //Нельзя вводить буквы, рабочий бакепасе
@@ -170,10 +160,6 @@ namespace Kursovayyaa
         {
             if (e.KeyChar != 8 && (e.KeyChar < 48 || e.KeyChar > 57))
                 e.Handled = true;
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
         }
     }
 }

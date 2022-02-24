@@ -71,17 +71,6 @@ namespace Kursovayyaa
             //Инициализируем соединение с подходящей строкой
             conn = new MySqlConnection(connStr);
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void metroButton3_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -146,23 +135,11 @@ namespace Kursovayyaa
                 e.Handled = true;
             }
         }
-
-        private void metroButton4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void metroButton2_Click(object sender, EventArgs e)
         {
             Form5 form5 = new Form5();
             form5.ShowDialog();
         }
-        
-        private void metroTextBox1_Click(object sender, EventArgs e)
-        {
-         
-        }
-
         private void metroTextBox1_Enter(object sender, EventArgs e)
         {
             if (metroTextBox1.Text == "Введите номер телефона")
@@ -180,12 +157,6 @@ namespace Kursovayyaa
                 metroTextBox1.ForeColor = Color.Gray;
             }
         }
-
-        private void metroTextBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void metroTextBox2_Enter(object sender, EventArgs e)
         {
             if (metroTextBox2.Text == "Введите пароль")
@@ -216,20 +187,6 @@ namespace Kursovayyaa
             {
                 metroTextBox2.PasswordChar = '*';
             }
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroLabel3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroCheckBox2_CheckedChanged(object sender, EventArgs e)
-        {
         }
     }
 }

@@ -128,17 +128,6 @@ namespace Kursovayyaa
             metroButton7.Visible = false;
             metroButton6.Visible = true;
         }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroListView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void metroButton4_Click(object sender, EventArgs e)
         {
             Form7 form7 = new Form7();

@@ -15,9 +15,7 @@ namespace Kursovayyaa
         //Статичное поле, которое хранит значение ID добаленного заказа
         public static string new_inserted_mainOrder_id;
         public static string aeee;
-        public static string koko;
         public static string shadowraze;
-        public static string ODIN;
     }
     //Класс необходимый для хранения состояния авторизации во время работы программы
     static class Auth
