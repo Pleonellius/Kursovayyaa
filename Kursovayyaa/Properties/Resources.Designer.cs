@@ -73,6 +73,16 @@ namespace Kursovayyaa.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1612759167_205_p_fon_goluboi_perekhod_246 {
+            get {
+                object obj = ResourceManager.GetObject("1612759167_205-p-fon-goluboi-perekhod-246", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _800px_Прекрасные_виды_для_Тимченко_Анны {
             get {
                 object obj = ResourceManager.GetObject("800px-Прекрасные_виды_для_Тимченко_Анны", resourceCulture);

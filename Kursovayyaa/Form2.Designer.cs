@@ -92,10 +92,10 @@ namespace Kursovayyaa
             // 
             // 
             this.metroTextBox1.CustomButton.Image = null;
-            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(487, 1);
+            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(365, 1);
             this.metroTextBox1.CustomButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox1.CustomButton.Name = "";
-            this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(28, 26);
+            this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.metroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTextBox1.CustomButton.TabIndex = 1;
             this.metroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -125,10 +125,10 @@ namespace Kursovayyaa
             // 
             // 
             this.metroTextBox3.CustomButton.Image = null;
-            this.metroTextBox3.CustomButton.Location = new System.Drawing.Point(487, 1);
+            this.metroTextBox3.CustomButton.Location = new System.Drawing.Point(365, 1);
             this.metroTextBox3.CustomButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox3.CustomButton.Name = "";
-            this.metroTextBox3.CustomButton.Size = new System.Drawing.Size(28, 26);
+            this.metroTextBox3.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.metroTextBox3.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTextBox3.CustomButton.TabIndex = 1;
             this.metroTextBox3.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -158,10 +158,10 @@ namespace Kursovayyaa
             // 
             // 
             this.metroTextBox4.CustomButton.Image = null;
-            this.metroTextBox4.CustomButton.Location = new System.Drawing.Point(487, 1);
+            this.metroTextBox4.CustomButton.Location = new System.Drawing.Point(365, 1);
             this.metroTextBox4.CustomButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox4.CustomButton.Name = "";
-            this.metroTextBox4.CustomButton.Size = new System.Drawing.Size(28, 26);
+            this.metroTextBox4.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.metroTextBox4.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTextBox4.CustomButton.TabIndex = 1;
             this.metroTextBox4.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -191,10 +191,10 @@ namespace Kursovayyaa
             // 
             // 
             this.metroTextBox5.CustomButton.Image = null;
-            this.metroTextBox5.CustomButton.Location = new System.Drawing.Point(489, 1);
+            this.metroTextBox5.CustomButton.Location = new System.Drawing.Point(367, 1);
             this.metroTextBox5.CustomButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox5.CustomButton.Name = "";
-            this.metroTextBox5.CustomButton.Size = new System.Drawing.Size(28, 26);
+            this.metroTextBox5.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.metroTextBox5.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTextBox5.CustomButton.TabIndex = 1;
             this.metroTextBox5.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -226,7 +226,7 @@ namespace Kursovayyaa
             this.metroListView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroListView1.Name = "metroListView1";
             this.metroListView1.OwnerDraw = true;
-            this.metroListView1.Size = new System.Drawing.Size(480, 298);
+            this.metroListView1.Size = new System.Drawing.Size(407, 298);
             this.metroListView1.TabIndex = 13;
             this.metroListView1.UseCompatibleStateImageBehavior = false;
             this.metroListView1.UseSelectable = true;
@@ -236,7 +236,7 @@ namespace Kursovayyaa
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(303, 16);
+            this.label1.Location = new System.Drawing.Point(263, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(193, 32);
             this.label1.TabIndex = 14;
@@ -290,12 +290,14 @@ namespace Kursovayyaa
             this.metroButton4.Name = "metroButton4";
             this.metroButton4.Size = new System.Drawing.Size(132, 54);
             this.metroButton4.TabIndex = 20;
+            this.metroButton4.Text = "Контакты";
             this.metroButton4.UseSelectable = true;
+            this.metroButton4.Click += new System.EventHandler(this.metroButton4_Click);
             // 
             // metroButton5
             // 
-            this.metroButton5.Location = new System.Drawing.Point(255, 354);
-            this.metroButton5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroButton5.Location = new System.Drawing.Point(161, 354);
+            this.metroButton5.Margin = new System.Windows.Forms.Padding(4);
             this.metroButton5.Name = "metroButton5";
             this.metroButton5.Size = new System.Drawing.Size(100, 28);
             this.metroButton5.TabIndex = 21;
@@ -306,8 +308,8 @@ namespace Kursovayyaa
             // 
             // metroButton6
             // 
-            this.metroButton6.Location = new System.Drawing.Point(538, 354);
-            this.metroButton6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroButton6.Location = new System.Drawing.Point(465, 354);
+            this.metroButton6.Margin = new System.Windows.Forms.Padding(4);
             this.metroButton6.Name = "metroButton6";
             this.metroButton6.Size = new System.Drawing.Size(103, 28);
             this.metroButton6.TabIndex = 22;
@@ -317,8 +319,8 @@ namespace Kursovayyaa
             // 
             // metroButton7
             // 
-            this.metroButton7.Location = new System.Drawing.Point(363, 354);
-            this.metroButton7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroButton7.Location = new System.Drawing.Point(269, 354);
+            this.metroButton7.Margin = new System.Windows.Forms.Padding(4);
             this.metroButton7.Name = "metroButton7";
             this.metroButton7.Size = new System.Drawing.Size(100, 28);
             this.metroButton7.TabIndex = 23;
@@ -333,10 +335,10 @@ namespace Kursovayyaa
             // 
             // 
             this.metroTextBox6.CustomButton.Image = null;
-            this.metroTextBox6.CustomButton.Location = new System.Drawing.Point(132, 1);
+            this.metroTextBox6.CustomButton.Location = new System.Drawing.Point(99, 1);
             this.metroTextBox6.CustomButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox6.CustomButton.Name = "";
-            this.metroTextBox6.CustomButton.Size = new System.Drawing.Size(28, 26);
+            this.metroTextBox6.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.metroTextBox6.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTextBox6.CustomButton.TabIndex = 1;
             this.metroTextBox6.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -363,7 +365,7 @@ namespace Kursovayyaa
             // metroDateTime1
             // 
             this.metroDateTime1.Location = new System.Drawing.Point(172, 140);
-            this.metroDateTime1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroDateTime1.Margin = new System.Windows.Forms.Padding(4);
             this.metroDateTime1.MaxDate = new System.DateTime(2006, 12, 31, 0, 0, 0, 0);
             this.metroDateTime1.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 30);
@@ -379,10 +381,10 @@ namespace Kursovayyaa
             // 
             // 
             this.metroTextBox2.CustomButton.Image = null;
-            this.metroTextBox2.CustomButton.Location = new System.Drawing.Point(489, 1);
+            this.metroTextBox2.CustomButton.Location = new System.Drawing.Point(367, 1);
             this.metroTextBox2.CustomButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox2.CustomButton.Name = "";
-            this.metroTextBox2.CustomButton.Size = new System.Drawing.Size(28, 26);
+            this.metroTextBox2.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.metroTextBox2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTextBox2.CustomButton.TabIndex = 1;
             this.metroTextBox2.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -420,7 +422,7 @@ namespace Kursovayyaa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(654, 386);
+            this.ClientSize = new System.Drawing.Size(586, 389);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.metroTextBox2);
             this.Controls.Add(this.metroDateTime1);
@@ -443,8 +445,11 @@ namespace Kursovayyaa
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroListView1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximumSize = new System.Drawing.Size(586, 389);
+            this.MinimumSize = new System.Drawing.Size(586, 389);
             this.Name = "Form2";
             this.Padding = new System.Windows.Forms.Padding(20, 74, 20, 20);
+            this.Style = MetroFramework.MetroColorStyle.White;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);

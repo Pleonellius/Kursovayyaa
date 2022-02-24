@@ -227,5 +227,9 @@ namespace Kursovayyaa
         {
 
         }
+
+        private void metroCheckBox2_CheckedChanged(object sender, EventArgs e)
+        {
+        }
     }
 }

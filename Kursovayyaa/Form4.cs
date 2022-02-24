@@ -49,8 +49,8 @@ namespace Kursovayyaa
             {
                 //Открываем соединение
                 conn.Open();
-                using (MySqlCommand cmd = new MySqlCommand($"INSERT INTO Taloni (NamePaci, idVraha, Time, Data, Kab, Spec, telf)" +
-                   "VALUES (@name, @vrah, @time, @date, @kab, @speci, @telfi)", conn))
+                using (MySqlCommand cmd = new MySqlCommand($"INSERT INTO Taloni (NamePaci, idVraha, Time, Data, Kab, Spec, telf, vrahtelf)" +
+                   "VALUES (@name, @vrah, @time, @date, @kab, @speci, @telfi, @vt)", conn))
                 {
                     //Использование параметров в запросах. Это повышает безопасность работы программы
                     cmd.Parameters.Add("@name", MySqlDbType.VarChar).Value = metroTextBox5.Text;
@@ -59,6 +59,7 @@ namespace Kursovayyaa
                     cmd.Parameters.Add("@kab", MySqlDbType.VarChar).Value = metroTextBox4.Text;
                     cmd.Parameters.Add("@speci", MySqlDbType.VarChar).Value = metroTextBox2.Text;
                     cmd.Parameters.Add("@telfi", MySqlDbType.VarChar).Value = Auth.auth_telef;
+                    cmd.Parameters.Add("@vt", MySqlDbType.VarChar).Value = metroTextBox3.Text;
                     cmd.Parameters.Add("@date", MySqlDbType.Timestamp).Value = string.Format("{0:yyyy-MM-dd}", metroDateTime1.Value);
                     int insertedRows = cmd.ExecuteNonQuery();
                     // закрываем подключение  БД

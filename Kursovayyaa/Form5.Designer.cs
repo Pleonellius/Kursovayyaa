@@ -42,12 +42,10 @@ namespace Kursovayyaa
             this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
             this.htmlToolTip1 = new MetroFramework.Drawing.Html.HtmlToolTip();
             this.Регистрация = new MetroFramework.Controls.MetroLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroCheckBox1 = new MetroFramework.Controls.MetroCheckBox();
             this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // metroTextBox1
@@ -251,16 +249,6 @@ namespace Kursovayyaa
             this.Регистрация.UseCustomBackColor = true;
             this.Регистрация.UseCustomForeColor = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Kursovayyaa.Properties.Resources.T42Yoh9__Og;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 11);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(549, 366);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            // 
             // metroCheckBox1
             // 
             this.metroCheckBox1.AutoSize = true;
@@ -329,14 +317,13 @@ namespace Kursovayyaa
             this.Controls.Add(this.metroTextBox5);
             this.Controls.Add(this.metroTextBox3);
             this.Controls.Add(this.metroTextBox1);
-            this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximumSize = new System.Drawing.Size(549, 377);
             this.MinimumSize = new System.Drawing.Size(549, 377);
             this.Name = "Form5";
             this.Padding = new System.Windows.Forms.Padding(20, 74, 20, 20);
+            this.Style = MetroFramework.MetroColorStyle.White;
             this.Load += new System.EventHandler(this.Form5_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -356,7 +343,6 @@ namespace Kursovayyaa
         private MetroFramework.Controls.MetroLabel metroLabel6;
         private MetroFramework.Controls.MetroDateTime metroDateTime1;
         private MetroFramework.Drawing.Html.HtmlToolTip htmlToolTip1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private MetroFramework.Controls.MetroLabel Регистрация;
         private MetroFramework.Controls.MetroCheckBox metroCheckBox1;
         private MetroFramework.Controls.MetroComboBox metroComboBox1;

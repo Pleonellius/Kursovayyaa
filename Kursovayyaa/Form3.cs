@@ -77,7 +77,7 @@ namespace Kursovayyaa
         public void GetListUsers()
         {
             //Запрос для вывода строк в БД
-            string commandStr = "SELECT IMAVraha AS 'Ф.И.О Врача', Special AS 'Специальность', Staj AS 'Стаж', obrazovanie AS 'Образование', kabinet AS 'Кабинет',vrema AS 'Время' FROM Vrahi";
+            string commandStr = "SELECT IMAVraha AS 'Ф.И.О Врача', Special AS 'Специальность', phone AS 'Телефон', obrazovanie AS 'Образование', kabinet AS 'Кабинет',vrema AS 'Время' FROM Vrahi";
             //Открываем соединение
             conn.Open();
             //Объявляем команду, которая выполнить запрос в соединении conn

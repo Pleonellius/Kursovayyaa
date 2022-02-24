@@ -87,34 +87,40 @@ namespace Kursovayyaa
                 using (MySqlCommand cmd = new MySqlCommand($"INSERT INTO Pacienti (NamePac, GodRoj, Telefon, Adres, pol, Password)" +
                    "VALUES (@name, @godr, @telef, @adres, @po, @passw)", conn))
                 {
-                    if (textBox1.TextLength < 11)
+                    if (metroComboBox1.SelectedIndex==-1)
                     {
-                        MessageBox.Show("Минимум 11 цифр в номере телефона");
+                        MessageBox.Show("Выберите пол");
                     }
                     else
                     {
-                        //Условная конструкция
-                        if (metroTextBox1.Text == "" || metroTextBox3.Text == "" || textBox1.Text == "" || metroTextBox5.Text == "")
+                        if (textBox1.TextLength < 11)
                         {
-                            MessageBox.Show("Заполните все поля !");
+                            MessageBox.Show("Минимум 11 цифр в номере телефона");
                         }
                         else
                         {
-                            //Использование параметров в запросах. Это повышает безопасность работы программы
-                            cmd.Parameters.Add("@name", MySqlDbType.VarChar).Value = metroTextBox1.Text;
-                            cmd.Parameters.Add("@passw", MySqlDbType.VarChar).Value = sha256(metroTextBox3.Text);
-                            cmd.Parameters.Add("@telef", MySqlDbType.VarChar).Value = textBox1.Text;
-                            cmd.Parameters.Add("@adres", MySqlDbType.VarChar).Value = metroTextBox5.Text;
-                            cmd.Parameters.Add("@po", MySqlDbType.VarChar).Value = metroComboBox1.SelectedItem.ToString();
-                            cmd.Parameters.Add("@godr", MySqlDbType.Timestamp).Value = string.Format("{0:yyyy-MM-dd}", metroDateTime1.Value);
-                            int insertedRows = cmd.ExecuteNonQuery();
-                            // закрываем подключение  БД
-                            conn.Close();
-                            MessageBox.Show("Регистрация прошла успешно !");
-                            this.Close();
+                            //Условная конструкция
+                            if (metroTextBox1.Text == "" || metroTextBox3.Text == "" || textBox1.Text == "" || metroTextBox5.Text == "")
+                            {
+                                MessageBox.Show("Заполните все поля !");
+                            }
+                            else
+                            {
+                                //Использование параметров в запросах. Это повышает безопасность работы программы
+                                cmd.Parameters.Add("@name", MySqlDbType.VarChar).Value = metroTextBox1.Text;
+                                cmd.Parameters.Add("@passw", MySqlDbType.VarChar).Value = sha256(metroTextBox3.Text);
+                                cmd.Parameters.Add("@telef", MySqlDbType.VarChar).Value = textBox1.Text;
+                                cmd.Parameters.Add("@adres", MySqlDbType.VarChar).Value = metroTextBox5.Text;
+                                cmd.Parameters.Add("@po", MySqlDbType.VarChar).Value = metroComboBox1.SelectedItem.ToString();
+                                cmd.Parameters.Add("@godr", MySqlDbType.Timestamp).Value = string.Format("{0:yyyy-MM-dd}", metroDateTime1.Value);
+                                int insertedRows = cmd.ExecuteNonQuery();
+                                // закрываем подключение  БД
+                                conn.Close();
+                                MessageBox.Show("Регистрация прошла успешно !");
+                                this.Close();
+                            }
                         }
-                    }
-                   
+                    }  
                 }
             }
 
@@ -162,7 +168,8 @@ namespace Kursovayyaa
         }
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-          
+            if (e.KeyChar != 8 && (e.KeyChar < 48 || e.KeyChar > 57))
+                e.Handled = true;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
