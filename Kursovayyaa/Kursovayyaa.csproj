@@ -165,5 +165,11 @@
   <ItemGroup>
     <None Include="Resources\1612759167_205-p-fon-goluboi-perekhod-246.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-logo-trademark-symbol-brand-restart-miscellaneous-text-trademark-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-trademark-symbol-brand-restart-thumbnail.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

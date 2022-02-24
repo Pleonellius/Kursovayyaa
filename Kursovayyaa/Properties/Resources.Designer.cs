@@ -93,6 +93,27 @@ namespace Kursovayyaa.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo_trademark_symbol_brand_restart_thumbnail {
+            get {
+                object obj = ResourceManager.GetObject("logo-trademark-symbol-brand-restart-thumbnail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_transparent_logo_trademark_symbol_brand_restart_miscellaneous_text_trademark_thumbnail {
+            get {
+                object obj = ResourceManager.GetObject("png-transparent-logo-trademark-symbol-brand-restart-miscellaneous-text-trademark-" +
+                        "thumbnail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap T42Yoh9__Og {
             get {
                 object obj = ResourceManager.GetObject("T42Yoh9_-Og", resourceCulture);
