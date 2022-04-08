@@ -14,7 +14,7 @@ namespace Kursovayyaa
     public partial class Form5 : MetroFramework.Forms.MetroForm
     {
         // строка подключения к БД
-        string connStr = "server=caseum.ru;port=33333;user=st_2_1_19;database=st_2_1_19;password=68201560;";
+        string connStr = "server=chuc.caseum.ru;port=33333;user=st_2_19_1;database=is_2_19_st1_KURS;password=58458103;";
         public Boolean CheckUser()
         {
             //Запрос в БД на предмет того, если ли строка с подходящим логином и паролем
@@ -67,7 +67,7 @@ namespace Kursovayyaa
         private void Form5_Load(object sender, EventArgs e)
         {
             // строка подключения к БД
-            string connStr = "server=caseum.ru;port=33333;user=st_2_1_19;database=st_2_1_19;password=68201560;";
+            string connStr = "server=chuc.caseum.ru;port=33333;user=st_2_19_1;database=is_2_19_st1_KURS;password=58458103;";
             // создаём объект для подключения к БД
             conn = new MySqlConnection(connStr);
             //Вызов метода обновления списка преподавателей с передачей в качестве параметра ListBox

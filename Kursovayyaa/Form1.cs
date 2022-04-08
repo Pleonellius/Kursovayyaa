@@ -15,7 +15,7 @@ namespace Kursovayyaa
     {
 
         // строка подключения к БД
-        string connStr = "server=caseum.ru;port=33333;user=st_2_1_19;database=st_2_1_19;password=68201560;";
+        string connStr = "server=chuc.caseum.ru;port=33333;user=st_2_19_1;database=is_2_19_st1_KURS;password=58458103;";
         //Переменная соединения
         MySqlConnection conn;
         //Логин и пароль к данной форме Вы сможете посмотреть в БД db_test таблице t_user
@@ -50,11 +50,11 @@ namespace Kursovayyaa
             {
                 // элементы массива [] - это значения столбцов из запроса SELECT
                 Auth.auth_fio = reader[1].ToString();
-                Auth.auth_age = reader[2].ToString();
-                Auth.auth_data = reader[3].ToString();
-                Auth.auth_telef = reader[4].ToString();
-                Auth.auth_adres = reader[5].ToString();
-                Auth.auth_pol = reader[6].ToString();
+                Auth.auth_age = reader[4].ToString();
+                Auth.auth_data = reader[2].ToString();
+                Auth.auth_telef = reader[3].ToString();
+                Auth.auth_adres = reader[4].ToString();
+                Auth.auth_pol = reader[5].ToString();
                 Auth.auth_id = reader[0].ToString();
             }
             reader.Close(); // закрываем reader

@@ -22,7 +22,7 @@ namespace Kursovayyaa
         MySqlConnection conn;
         private void Form2_Load(object sender, EventArgs e)
         {
-            string connStr = "server=caseum.ru;port=33333;user=st_2_1_19;database=st_2_1_19;password=68201560;";
+            string connStr = "server=chuc.caseum.ru;port=33333;user=st_2_19_1;database=is_2_19_st1_KURS;password=58458103;";
             // создаём объект для подключения к БД
             conn = new MySqlConnection(connStr);
             //Если авторизации была успешна и в поле класса хранится истина, то делаем движуху:

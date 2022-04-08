@@ -14,7 +14,7 @@ namespace Kursovayyaa
     public partial class Form4 : MetroFramework.Forms.MetroForm
     {
         // строка подключения к БД
-        string connStr = "server=caseum.ru;port=33333;user=st_2_1_19;database=st_2_1_19;password=68201560;";
+        string connStr = "server=chuc.caseum.ru;port=33333;user=st_2_19_1;database=is_2_19_st1_KURS;password=58458103;";
         public Form4()
         {
             InitializeComponent();
@@ -65,7 +65,7 @@ namespace Kursovayyaa
         }
         private void metroDateTime1_ValueChanged(object sender, EventArgs e)
         {
-            metroDateTime1.MinDate = DateTime.Now;
+            //metroDateTime1.MinDate = DateTime.Now;
             metroDateTime1.MaxDate = metroDateTime1.MinDate.AddDays(14);
             metroDateTime1.Value.ToString(string.Format("{0:yyyy-MM-dd}", metroDateTime1.Value));
         }
