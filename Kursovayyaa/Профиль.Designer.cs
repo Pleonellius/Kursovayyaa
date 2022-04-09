@@ -1,7 +1,7 @@
 ﻿
 namespace Kursovayyaa
 {
-    partial class Form2
+    partial class Профиль
     {
 
         /// <summary>
@@ -30,6 +30,7 @@ namespace Kursovayyaa
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Профиль));
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
@@ -51,11 +52,13 @@ namespace Kursovayyaa
             this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
             this.metroTextBox2 = new MetroFramework.Controls.MetroTextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(23, 76);
+            this.metroButton1.Location = new System.Drawing.Point(22, 154);
             this.metroButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(132, 54);
@@ -66,7 +69,7 @@ namespace Kursovayyaa
             // 
             // metroButton2
             // 
-            this.metroButton2.Location = new System.Drawing.Point(23, 140);
+            this.metroButton2.Location = new System.Drawing.Point(22, 212);
             this.metroButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(132, 54);
@@ -77,7 +80,7 @@ namespace Kursovayyaa
             // 
             // metroButton3
             // 
-            this.metroButton3.Location = new System.Drawing.Point(23, 277);
+            this.metroButton3.Location = new System.Drawing.Point(22, 328);
             this.metroButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroButton3.Name = "metroButton3";
             this.metroButton3.Size = new System.Drawing.Size(132, 54);
@@ -283,7 +286,7 @@ namespace Kursovayyaa
             // 
             // metroButton4
             // 
-            this.metroButton4.Location = new System.Drawing.Point(23, 207);
+            this.metroButton4.Location = new System.Drawing.Point(22, 270);
             this.metroButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroButton4.Name = "metroButton4";
             this.metroButton4.Size = new System.Drawing.Size(132, 54);
@@ -416,11 +419,22 @@ namespace Kursovayyaa
             this.label3.TabIndex = 28;
             this.label3.Text = "Пол";
             // 
-            // Form2
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Kursovayyaa.Properties.Resources.Поликлиника_96;
+            this.pictureBox1.Location = new System.Drawing.Point(8, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(147, 133);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 29;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Профиль
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(586, 389);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.metroTextBox2);
             this.Controls.Add(this.metroDateTime1);
@@ -442,14 +456,16 @@ namespace Kursovayyaa
             this.Controls.Add(this.metroButton2);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroListView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximumSize = new System.Drawing.Size(586, 389);
             this.MinimumSize = new System.Drawing.Size(586, 389);
-            this.Name = "Form2";
+            this.Name = "Профиль";
             this.Padding = new System.Windows.Forms.Padding(20, 74, 20, 20);
             this.Style = MetroFramework.MetroColorStyle.White;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
             this.Load += new System.EventHandler(this.Form2_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -477,5 +493,6 @@ namespace Kursovayyaa
         private MetroFramework.Controls.MetroDateTime metroDateTime1;
         private MetroFramework.Controls.MetroTextBox metroTextBox2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

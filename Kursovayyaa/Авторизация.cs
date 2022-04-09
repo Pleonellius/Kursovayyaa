@@ -11,7 +11,7 @@ using MySql.Data.MySqlClient;
 
 namespace Kursovayyaa
 {
-    public partial class Form1 : MetroFramework.Forms.MetroForm
+    public partial class Авторизация : MetroFramework.Forms.MetroForm
     {
 
         // строка подключения к БД
@@ -61,7 +61,7 @@ namespace Kursovayyaa
             // закрываем соединение с БД
             conn.Close();
         }
-        public Form1()
+        public Авторизация()
         {
             InitializeComponent();
         }
@@ -75,9 +75,10 @@ namespace Kursovayyaa
         {
             this.Close();
         }
-
+        //Кнопка авторизации
         private void metroButton1_Click(object sender, EventArgs e)
         {
+            //Проверка на пустые поля и сама авторизация
                 if (metroTextBox1.Text == "" || metroTextBox2.Text == "")
                 {
                     MessageBox.Show("Заполните все поля");
@@ -116,7 +117,7 @@ namespace Kursovayyaa
                         //Достаем данные пользователя в случае успеха
                         GetUserInfo(metroTextBox1.Text);
                         this.Hide();
-                        Form2 form2 = new Form2();
+                        Профиль form2 = new Профиль();
                         form2.ShowDialog();
                     }
                     else
@@ -126,7 +127,7 @@ namespace Kursovayyaa
                     }
                 } 
         }
-
+        //Нельзя писать буквы
         private void metroTextBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
@@ -137,9 +138,10 @@ namespace Kursovayyaa
         }
         private void metroButton2_Click(object sender, EventArgs e)
         {
-            Form5 form5 = new Form5();
+            Регистрацияя form5 = new Регистрацияя();
             form5.ShowDialog();
         }
+        //Визуальные фишки для textbox'ов
         private void metroTextBox1_Enter(object sender, EventArgs e)
         {
             if (metroTextBox1.Text == "Введите номер телефона")

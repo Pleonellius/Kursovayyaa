@@ -1,7 +1,7 @@
 ﻿
 namespace Kursovayyaa
 {
-    partial class Form7
+    partial class Контакты
     {
         /// <summary>
         /// Required designer variable.
@@ -29,9 +29,12 @@ namespace Kursovayyaa
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Контакты));
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // metroButton3
@@ -78,19 +81,32 @@ namespace Kursovayyaa
             this.label1.TabIndex = 15;
             this.label1.Text = "Контакты";
             // 
-            // Form7
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Kursovayyaa.Properties.Resources._666;
+            this.pictureBox1.Location = new System.Drawing.Point(7, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(123, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Контакты
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(542, 264);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.metroButton3);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(542, 264);
             this.MinimumSize = new System.Drawing.Size(542, 264);
-            this.Name = "Form7";
+            this.Name = "Контакты";
             this.Style = MetroFramework.MetroColorStyle.White;
             this.Load += new System.EventHandler(this.Form7_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -101,5 +117,6 @@ namespace Kursovayyaa
         private MetroFramework.Controls.MetroButton metroButton3;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

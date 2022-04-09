@@ -36,7 +36,7 @@ namespace Kursovayyaa
         {
             this.Close();
         }
-
+        //Кнопка записи
         private void metroButton2_Click(object sender, EventArgs e)
         {
             using (MySqlConnection conn = new MySqlConnection(connStr))
@@ -65,7 +65,8 @@ namespace Kursovayyaa
         }
         private void metroDateTime1_ValueChanged(object sender, EventArgs e)
         {
-            //metroDateTime1.MinDate = DateTime.Now;
+            // Настройка выбора даты для регистрации
+            metroDateTime1.MinDate = DateTime.Now;
             metroDateTime1.MaxDate = metroDateTime1.MinDate.AddDays(14);
             metroDateTime1.Value.ToString(string.Format("{0:yyyy-MM-dd}", metroDateTime1.Value));
         }

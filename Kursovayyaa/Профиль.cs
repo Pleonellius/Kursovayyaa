@@ -11,10 +11,10 @@ using MySql.Data.MySqlClient;
 
 namespace Kursovayyaa
 {
-    public partial class Form2 : MetroFramework.Forms.MetroForm
+    public partial class Профиль : MetroFramework.Forms.MetroForm
     {
 
-        public Form2()
+        public Профиль()
         {
             InitializeComponent();
         }
@@ -73,7 +73,7 @@ namespace Kursovayyaa
             Form6 frm = new Form6();
             frm.ShowDialog();
         }
-
+        //Кнопка изменить 
         private void metroButton6_Click(object sender, EventArgs e)
         {
             metroDateTime1.Visible = true;
@@ -84,7 +84,7 @@ namespace Kursovayyaa
             metroButton7.Visible = true;
             metroButton6.Visible = false;
         }
-
+        //Кнопка отмены изменений
         private void metroButton7_Click(object sender, EventArgs e)
         {
             metroDateTime1.Visible = false;
@@ -99,10 +99,10 @@ namespace Kursovayyaa
             metroTextBox4.Text = Auth.auth_telef;
             metroTextBox5.Text = Auth.auth_adres;
         }
-
+        //Кнопка сохранения изменений
         private void metroButton5_Click(object sender, EventArgs e)
         {
-
+            
             //Получаем ID изменяемого студента
             string redact_id = metroTextBox6.Text;
             //Получаем значение нового ФИО из TextBox
@@ -130,7 +130,7 @@ namespace Kursovayyaa
         }
         private void metroButton4_Click(object sender, EventArgs e)
         {
-            Form7 form7 = new Form7();
+            Контакты form7 = new Контакты();
             form7.ShowDialog();
         }
     }

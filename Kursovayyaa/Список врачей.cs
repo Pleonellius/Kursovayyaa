@@ -144,6 +144,7 @@ namespace Kursovayyaa
                 GetSelectedFIOString();
             }
         }
+        //ComboBox где врачи сортируются по специальности
         private void toolStripComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (toolStripComboBox1.SelectedIndex)

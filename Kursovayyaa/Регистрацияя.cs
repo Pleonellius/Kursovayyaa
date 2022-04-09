@@ -11,7 +11,7 @@ using MySql.Data.MySqlClient;
 
 namespace Kursovayyaa
 {
-    public partial class Form5 : MetroFramework.Forms.MetroForm
+    public partial class Регистрацияя : MetroFramework.Forms.MetroForm
     {
         // строка подключения к БД
         string connStr = "server=chuc.caseum.ru;port=33333;user=st_2_19_1;database=is_2_19_st1_KURS;password=58458103;";
@@ -60,7 +60,7 @@ namespace Kursovayyaa
         //Объявляем соединения с БД
         MySqlConnection conn;
 
-        public Form5()
+        public Регистрацияя()
         {
             InitializeComponent();
         }
@@ -72,7 +72,7 @@ namespace Kursovayyaa
             conn = new MySqlConnection(connStr);
             //Вызов метода обновления списка преподавателей с передачей в качестве параметра ListBox
         }
-
+        //Кнопка регистрации
         private void metroButton1_Click(object sender, EventArgs e)
         {
             
@@ -130,7 +130,7 @@ namespace Kursovayyaa
         {
             this.Close();
         }
-
+        //Показать пароль
         private void metroCheckBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (metroCheckBox1.Checked == true)

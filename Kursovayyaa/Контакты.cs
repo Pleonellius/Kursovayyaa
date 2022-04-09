@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Kursovayyaa
 {
-    public partial class Form7 : MetroFramework.Forms.MetroForm
+    public partial class Контакты : MetroFramework.Forms.MetroForm
     {
-        public Form7()
+        public Контакты()
         {
             InitializeComponent();
         }
