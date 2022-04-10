@@ -48,6 +48,10 @@ namespace Kursovayyaa
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,7 +71,7 @@ namespace Kursovayyaa
             this.metroTextBox1.CustomButton.UseSelectable = true;
             this.metroTextBox1.CustomButton.Visible = false;
             this.metroTextBox1.Lines = new string[0];
-            this.metroTextBox1.Location = new System.Drawing.Point(85, 138);
+            this.metroTextBox1.Location = new System.Drawing.Point(18, 135);
             this.metroTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox1.MaxLength = 32767;
             this.metroTextBox1.Name = "metroTextBox1";
@@ -100,7 +104,7 @@ namespace Kursovayyaa
             this.metroTextBox3.CustomButton.UseSelectable = true;
             this.metroTextBox3.CustomButton.Visible = false;
             this.metroTextBox3.Lines = new string[0];
-            this.metroTextBox3.Location = new System.Drawing.Point(85, 184);
+            this.metroTextBox3.Location = new System.Drawing.Point(18, 184);
             this.metroTextBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox3.MaxLength = 32767;
             this.metroTextBox3.Name = "metroTextBox3";
@@ -132,7 +136,7 @@ namespace Kursovayyaa
             this.metroTextBox5.CustomButton.UseSelectable = true;
             this.metroTextBox5.CustomButton.Visible = false;
             this.metroTextBox5.Lines = new string[0];
-            this.metroTextBox5.Location = new System.Drawing.Point(283, 184);
+            this.metroTextBox5.Location = new System.Drawing.Point(18, 316);
             this.metroTextBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTextBox5.MaxLength = 32767;
             this.metroTextBox5.Name = "metroTextBox5";
@@ -150,7 +154,7 @@ namespace Kursovayyaa
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(195, 289);
+            this.metroButton1.Location = new System.Drawing.Point(195, 338);
             this.metroButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(141, 37);
@@ -161,7 +165,7 @@ namespace Kursovayyaa
             // 
             // metroButton2
             // 
-            this.metroButton2.Location = new System.Drawing.Point(195, 330);
+            this.metroButton2.Location = new System.Drawing.Point(195, 379);
             this.metroButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(141, 37);
@@ -173,7 +177,7 @@ namespace Kursovayyaa
             // metroDateTime1
             // 
             this.metroDateTime1.CalendarFont = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.metroDateTime1.Location = new System.Drawing.Point(284, 253);
+            this.metroDateTime1.Location = new System.Drawing.Point(288, 186);
             this.metroDateTime1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroDateTime1.MaxDate = new System.DateTime(2006, 12, 31, 0, 0, 0, 0);
             this.metroDateTime1.MinDate = new System.DateTime(1900, 1, 2, 0, 0, 0, 0);
@@ -194,7 +198,7 @@ namespace Kursovayyaa
             this.Регистрация.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.Регистрация.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.Регистрация.ForeColor = System.Drawing.Color.Black;
-            this.Регистрация.Location = new System.Drawing.Point(195, 55);
+            this.Регистрация.Location = new System.Drawing.Point(169, 55);
             this.Регистрация.Name = "Регистрация";
             this.Регистрация.Size = new System.Drawing.Size(128, 25);
             this.Регистрация.TabIndex = 17;
@@ -205,7 +209,7 @@ namespace Kursovayyaa
             // metroCheckBox1
             // 
             this.metroCheckBox1.AutoSize = true;
-            this.metroCheckBox1.Location = new System.Drawing.Point(85, 211);
+            this.metroCheckBox1.Location = new System.Drawing.Point(18, 211);
             this.metroCheckBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroCheckBox1.Name = "metroCheckBox1";
             this.metroCheckBox1.Size = new System.Drawing.Size(127, 17);
@@ -221,7 +225,7 @@ namespace Kursovayyaa
             this.metroComboBox1.Items.AddRange(new object[] {
             "Мужской",
             "Женский"});
-            this.metroComboBox1.Location = new System.Drawing.Point(85, 253);
+            this.metroComboBox1.Location = new System.Drawing.Point(18, 255);
             this.metroComboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.metroComboBox1.Name = "metroComboBox1";
             this.metroComboBox1.Size = new System.Drawing.Size(160, 30);
@@ -231,7 +235,7 @@ namespace Kursovayyaa
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(284, 133);
+            this.textBox1.Location = new System.Drawing.Point(287, 135);
             this.textBox1.MaxLength = 11;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(142, 27);
@@ -244,7 +248,7 @@ namespace Kursovayyaa
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F);
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(280, 111);
+            this.label2.Location = new System.Drawing.Point(284, 113);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(127, 19);
             this.label2.TabIndex = 22;
@@ -256,7 +260,7 @@ namespace Kursovayyaa
             this.label1.Font = new System.Drawing.Font("Times New Roman", 10.2F);
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(81, 114);
+            this.label1.Location = new System.Drawing.Point(14, 114);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 19);
             this.label1.TabIndex = 23;
@@ -268,7 +272,7 @@ namespace Kursovayyaa
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10.2F);
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(81, 163);
+            this.label3.Location = new System.Drawing.Point(14, 163);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 19);
             this.label3.TabIndex = 24;
@@ -280,7 +284,7 @@ namespace Kursovayyaa
             this.label4.Font = new System.Drawing.Font("Times New Roman", 10.2F);
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(284, 163);
+            this.label4.Location = new System.Drawing.Point(14, 295);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(140, 19);
             this.label4.TabIndex = 25;
@@ -292,7 +296,7 @@ namespace Kursovayyaa
             this.label5.Font = new System.Drawing.Font("Times New Roman", 10.2F);
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(81, 230);
+            this.label5.Location = new System.Drawing.Point(14, 232);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(108, 19);
             this.label5.TabIndex = 26;
@@ -304,7 +308,7 @@ namespace Kursovayyaa
             this.label6.Font = new System.Drawing.Font("Times New Roman", 10.2F);
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(279, 232);
+            this.label6.Location = new System.Drawing.Point(284, 165);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(115, 19);
             this.label6.TabIndex = 27;
@@ -313,18 +317,62 @@ namespace Kursovayyaa
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Kursovayyaa.Properties.Resources.Поликлиника_96;
-            this.pictureBox1.Location = new System.Drawing.Point(8, 11);
+            this.pictureBox1.Location = new System.Drawing.Point(9, 7);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(145, 88);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label7.Location = new System.Drawing.Point(284, 232);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(123, 19);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Номер паспорта";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label8.Location = new System.Drawing.Point(284, 290);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(118, 19);
+            this.label8.TabIndex = 32;
+            this.label8.Text = "Серия паспорта";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(289, 311);
+            this.textBox2.MaxLength = 4;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(141, 22);
+            this.textBox2.TabIndex = 33;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(289, 254);
+            this.textBox3.MaxLength = 6;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(140, 22);
+            this.textBox3.TabIndex = 34;
+            // 
             // Регистрацияя
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(549, 377);
+            this.ClientSize = new System.Drawing.Size(502, 424);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -344,8 +392,8 @@ namespace Kursovayyaa
             this.Controls.Add(this.metroTextBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MaximumSize = new System.Drawing.Size(549, 377);
-            this.MinimumSize = new System.Drawing.Size(549, 377);
+            this.MaximumSize = new System.Drawing.Size(502, 424);
+            this.MinimumSize = new System.Drawing.Size(502, 424);
             this.Name = "Регистрацияя";
             this.Padding = new System.Windows.Forms.Padding(20, 74, 20, 20);
             this.Style = MetroFramework.MetroColorStyle.White;
@@ -376,5 +424,9 @@ namespace Kursovayyaa
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
