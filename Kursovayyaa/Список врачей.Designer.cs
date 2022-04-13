@@ -77,7 +77,7 @@ namespace Kursovayyaa
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(189, 50);
             this.metroButton2.TabIndex = 2;
-            this.metroButton2.Text = "Перейти к расписанию";
+            this.metroButton2.Text = "Перейти к выбору даты";
             this.metroButton2.UseSelectable = true;
             this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
             // 
