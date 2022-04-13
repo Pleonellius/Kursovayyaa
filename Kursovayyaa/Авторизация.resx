@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="metroButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>483, 269</value>
+    <value>442, 269</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="metroButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
@@ -148,7 +148,7 @@
     <value>10</value>
   </data>
   <data name="metroButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>597, 269</value>
+    <value>555, 269</value>
   </data>
   <data name="metroButton2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -175,7 +175,7 @@
     <value>9</value>
   </data>
   <data name="metroButton3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>536, 307</value>
+    <value>502, 307</value>
   </data>
   <data name="metroButton3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -223,7 +223,7 @@
     <value>False</value>
   </data>
   <data name="metroTextBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>483, 175</value>
+    <value>442, 175</value>
   </data>
   <data name="metroTextBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -268,7 +268,7 @@
     <value>False</value>
   </data>
   <data name="metroTextBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>483, 221</value>
+    <value>442, 221</value>
   </data>
   <data name="metroTextBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -379,7 +379,7 @@
     <value>True</value>
   </data>
   <data name="metroCheckBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>532, 248</value>
+    <value>483, 248</value>
   </data>
   <data name="metroCheckBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -415,7 +415,7 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>509, 128</value>
+    <value>474, 128</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>154, 26</value>
@@ -448,7 +448,7 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>532, 154</value>
+    <value>479, 154</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 19</value>
@@ -481,7 +481,7 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>551, 200</value>
+    <value>514, 200</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 19</value>
@@ -508,7 +508,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>484, 9</value>
+    <value>442, 9</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>201, 116</value>
@@ -1436,9 +1436,6 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
