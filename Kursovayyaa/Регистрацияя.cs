@@ -36,7 +36,7 @@ namespace Kursovayyaa
             conn.Close();
             if (table.Rows.Count > 0)
             {
-                MessageBox.Show("Такой номер телефона уже есть, введите другой номер телефона или авторизайтесь !");
+                MessageBox.Show("Такой номер телефона уже есть, введите другой номер телефона или авторизируйтесь !");
                 return true;
             }
             else
