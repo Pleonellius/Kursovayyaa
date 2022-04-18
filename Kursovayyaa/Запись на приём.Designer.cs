@@ -453,7 +453,6 @@ namespace Kursovayyaa
             this.metroDateTime1.Size = new System.Drawing.Size(216, 30);
             this.metroDateTime1.TabIndex = 20;
             this.metroDateTime1.Value = new System.DateTime(2022, 4, 8, 0, 0, 0, 0);
-            this.metroDateTime1.ValueChanged += new System.EventHandler(this.metroDateTime1_ValueChanged);
             // 
             // metroTextBox8
             // 

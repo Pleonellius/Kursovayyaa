@@ -66,9 +66,5 @@ namespace Kursovayyaa
                 }
             }
         }
-        private void metroDateTime1_ValueChanged(object sender, EventArgs e)
-        {
-            
-        }
     }
 }
