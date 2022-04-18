@@ -67,7 +67,7 @@ namespace Kursovayyaa
         private void Form5_Load(object sender, EventArgs e)
         {
             // строка подключения к БД
-            string connStr = "server=chuc.caseum.ru;port=33333;user=st_2_19_1;database=is_2_19_st1_KURS;password=58458103;";
+            string connStr = "server=10.90.12.110;port=33333;user=st_2_19_1;database=is_2_19_st1_KURS;password=58458103;";
             // создаём объект для подключения к БД
             conn = new MySqlConnection(connStr);
             //Вызов метода обновления списка преподавателей с передачей в качестве параметра ListBox

@@ -14,7 +14,7 @@ namespace Kursovayyaa
     public partial class Form4 : MetroFramework.Forms.MetroForm
     {
         // строка подключения к БД
-        string connStr = "server=chuc.caseum.ru;port=33333;user=st_2_19_1;database=is_2_19_st1_KURS;password=58458103;";
+        string connStr = "server=10.90.12.110;port=33333;user=st_2_19_1;database=is_2_19_st1_KURS;password=58458103;";
         public Form4()
         {
             InitializeComponent();

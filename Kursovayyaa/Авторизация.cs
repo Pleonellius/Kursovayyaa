@@ -15,7 +15,7 @@ namespace Kursovayyaa
     {
 
         // строка подключения к БД
-        string connStr = "server=chuc.caseum.ru;port=33333;user=st_2_19_1;database=is_2_19_st1_KURS;password=58458103;";
+        string connStr = "server=10.90.12.110;port=33333;user=st_2_19_1;database=is_2_19_st1_KURS;password=58458103;";
         //Переменная соединения
         MySqlConnection conn;
         //Логин и пароль к данной форме Вы сможете посмотреть в БД db_test таблице t_user
