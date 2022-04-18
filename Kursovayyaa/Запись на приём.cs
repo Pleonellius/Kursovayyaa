@@ -22,6 +22,9 @@ namespace Kursovayyaa
 
         private void Form4_Load(object sender, EventArgs e)
         {
+            metroDateTime1.MinDate = DateTime.Now;
+            metroDateTime1.MaxDate = metroDateTime1.MinDate.AddDays(14);
+            metroDateTime1.Value.ToString(string.Format("{0:yyyy-MM-dd}", metroDateTime1.Value));
             metroTextBox1.Text = SomeClass.variable_class;
             metroTextBox2.Text = SomeClass.new_inserted_id;
             metroTextBox3.Text = SomeClass.new_inserted_mainOrder_id;
@@ -65,10 +68,7 @@ namespace Kursovayyaa
         }
         private void metroDateTime1_ValueChanged(object sender, EventArgs e)
         {
-            // Настройка выбора даты для регистрации
-            metroDateTime1.MinDate = DateTime.Now;
-            metroDateTime1.MaxDate = metroDateTime1.MinDate.AddDays(14);
-            metroDateTime1.Value.ToString(string.Format("{0:yyyy-MM-dd}", metroDateTime1.Value));
+            
         }
     }
 }
